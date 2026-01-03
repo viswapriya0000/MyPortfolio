@@ -37,22 +37,6 @@ const Hero: React.FC = () => {
     return () => clearTimeout(timeoutId);
   }, [fullText]);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
     <section id="profile" className="min-h-screen flex items-center pt-28 pb-12 px-6 relative overflow-hidden scroll-mt-20">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-blue-600/5 blur-[120px] rounded-full -z-10"></div>
@@ -133,11 +117,10 @@ const Hero: React.FC = () => {
             href={PERSONAL_INFO.resumeUrl} 
             target="_blank"
             rel="noopener noreferrer"
-            download="Viswa_Priya_Resume.pdf"
             className="w-full sm:w-auto bg-white text-slate-900 px-8 py-3.5 rounded-xl font-bold hover:bg-blue-50 hover:scale-105 transition-all flex items-center justify-center space-x-3 shadow-xl active:scale-95 cursor-pointer text-base"
           >
-            <i className="fa-solid fa-download"></i>
-            <span>Download Resume</span>
+            <i className="fa-solid fa-file-pdf"></i>
+            <span>View Resume</span>
           </a>
         </div>
 

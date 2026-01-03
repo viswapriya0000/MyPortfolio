@@ -18,8 +18,8 @@ export const PERSONAL_INFO = {
   phone: "+91-9515717805",
   linkedin: "https://www.linkedin.com/in/viswa-priya-obulsetty-395862172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   github: "https://github.com/viswapriya0000/MyDemoPortfolioForPracticsing",
-  // Updated to Direct Download link format
-  resumeUrl: "https://drive.google.com/uc?export=download&id=1FYogGWBsJYCwzo5xc7elZ-RI_XfVeyoL",
+  // Standard view link for Google Drive PDF
+  resumeUrl: "https://drive.google.com/file/d/15m6UPTT1lBmOJaNK4JuZlahlzpj5GuRO/view?usp=sharing",
   location: "Bangalore, India",
   education: {
     degree: "Bachelor of Technology (B. Tech) in Electronics and Communication Engineering",

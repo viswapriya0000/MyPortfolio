@@ -5,6 +5,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import AIAssistant from './components/AIAssistant';
 import { PERSONAL_INFO } from './constants';
 
 const App: React.FC = () => {
@@ -59,6 +60,8 @@ const App: React.FC = () => {
         
         <Contact />
       </main>
+
+      <AIAssistant />
 
       <footer className="py-12 border-t border-slate-900 text-center space-y-6">
         <div className="flex justify-center space-x-8">

@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PROJECTS } from '../constants';
+import { Project } from '../types';
 
-const ProjectCard: React.FC<{ project: any; index: number }> = ({ project, index }) => {
+const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, index }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -43,7 +44,7 @@ const ProjectCard: React.FC<{ project: any; index: number }> = ({ project, index
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
            <div className="flex flex-wrap gap-2">
-             {project.tech.map(t => (
+             {project.tech.map((t: string) => (
                <span key={t} className="text-[10px] uppercase tracking-wider font-bold bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded backdrop-blur-md">
                  {t}
                </span>

@@ -1,15 +1,10 @@
-
 import { GoogleGenAI } from "@google/genai";
 import { PERSONAL_INFO, SKILL_CATEGORIES, EXPERIENCES } from '../constants';
 
-const API_KEY = process.env.API_KEY || "";
-
 export class GeminiService {
-  private ai: GoogleGenAI;
   private context: string;
 
   constructor() {
-    this.ai = new GoogleGenAI({ apiKey: API_KEY });
     this.context = `
       You are an AI assistant for the portfolio of ${PERSONAL_INFO.name}, a ${PERSONAL_INFO.designation}.
       Bio: ${PERSONAL_INFO.bio}
@@ -27,10 +22,13 @@ export class GeminiService {
   }
 
   async ask(question: string): Promise<string> {
-    if (!API_KEY) return "The AI assistant is currently offline as the API key is missing.";
+    const apiKey = process.env.API_KEY;
+    if (!apiKey) return "The AI assistant is currently offline as the API key is not configured in environment variables.";
+    
+    const ai = new GoogleGenAI({ apiKey });
     
     try {
-      const response = await this.ai.models.generateContent({
+      const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
         contents: question,
         config: {

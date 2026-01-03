@@ -117,9 +117,9 @@ const Hero: React.FC = () => {
             href={PERSONAL_INFO.resumeUrl} 
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-white text-slate-900 px-8 py-3.5 rounded-xl font-bold hover:bg-blue-50 hover:scale-105 transition-all flex items-center justify-center space-x-3 shadow-xl active:scale-95 cursor-pointer text-base"
+            className="w-full sm:w-auto bg-white text-slate-900 px-8 py-3.5 rounded-xl font-bold hover:bg-blue-50 hover:scale-105 transition-all flex items-center justify-center space-x-3 shadow-xl active:scale-95 cursor-pointer text-base group"
           >
-            <i className="fa-solid fa-file-pdf"></i>
+            <i className="fa-solid fa-file-pdf text-black group-hover:scale-110 transition-transform"></i>
             <span>View Resume</span>
           </a>
         </div>

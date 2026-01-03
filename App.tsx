@@ -9,7 +9,7 @@ import { PERSONAL_INFO } from './constants';
 
 const App: React.FC = () => {
   return (
-    <div className="relative selection:bg-blue-500 selection:text-white">
+    <div className="relative selection:bg-blue-500 selection:text-white bg-slate-950 min-h-screen">
       {/* Background elements */}
       <div className="fixed top-0 left-0 w-full h-full -z-50 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full"></div>
@@ -27,7 +27,7 @@ const App: React.FC = () => {
 
         <Projects />
 
-        <section className="py-24 px-6 bg-slate-950">
+        <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto glass p-12 rounded-3xl border border-blue-500/20 text-center space-y-8">
             <div className="flex justify-center">
               <div className="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-500 text-3xl">

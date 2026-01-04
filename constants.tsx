@@ -68,6 +68,8 @@ export const EXPERIENCES: Experience[] = [
       "Managed database versioning and migrations using Liquibase across multiple environments.",
       "Automated build and deployment cycles using Jenkins pipelines and Docker containerization.",
       "Engineered real-time data streaming pipelines with Apache Kafka for microservices communication.",
+      "Architected highly decoupled service layers and robust centralized exception-handling frameworks to ensure system stability and fault tolerance.",
+      "Streamlined development by implementing sophisticated Mapper patterns for seamless DTO-to-Entity transformations and designing modular, reusable utility components to maximize codebase maintainability.",
       "Achieved 90%+ test coverage using JUnit and Mockito, adhering to strict SonarQube quality gates."
     ]
   },
@@ -87,24 +89,34 @@ export const PROJECTS: Project[] = [
   {
     id: "1",
     title: "Quiz Application using microservices architecture",
-    description: "Built a robust RESTful backend for managing dynamic quizzes using Spring Boot microservices. Features real-time scoring, Kafka-based result processing, and PostgreSQL integration.",
+    description: "Architected a scalable Quiz Application leveraging a Microservices pattern with Spring Cloud OpenFeign for seamless inter-service communication between Quiz and Question microservices. The system dynamically generates customized assessments based on user-selected categories (e.g., Java, Python) and configurable question volumes. It includes a robust evaluation engine that processes user responses in real-time to provide instant and accurate performance results.",
     tech: ["Java","Spring Boot", "PostgreSQL", "Kafka", "Microservices", "Feign Client"],
     link: "https://github.com/viswapriya0000/MyDemoPortfolioForPracticsing/tree/main/MicroserviceTutorials-main",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "2",
-    title: "Login page using Spring Security",
-    description: "Developed a centralized authentication and authorization service using Spring Security and JWT. Implemented DTO-Entity patterns and custom exception handling for high security and loose coupling.",
-    tech: ["Java","Spring boot","Spring Security", "JWT", "Java 8", "PostgreSQL"],
+    title: "Identity and Access Management with Spring Security",
+    description: "Engineered a sophisticated Identity and Access Management system designed to handle multi-user scenarios with a high level of security. I implemented customized security filters and filter chains to manage fine-grained access control, while leveraging BCrypt Password Encoder to ensure the highest standards for credential hashing. The solution supports a hybrid authentication model, incorporating both Basic Authorization and stateless Bearer Tokens (JWT). Furthermore, I successfully integrated OAuth2 social login for platforms like Google and GitHub, allowing users to authenticate securely without storing sensitive external credentials in the local database.",
+    tech: ["Spring Security", "OAuth2", "JWT", "BCrypt", "Spring Boot", "Java 8", "PostgreSQL"],
     link: "https://github.com/viswapriya0000/MyDemoPortfolioForPracticsing/tree/main/Login-Page",
     image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=600"
   }
 ];
 
 export const CERTIFICATIONS = [
-  "AZ-900 Microsoft Azure Fundamentals Certification",
-  "GCDL Google Cloud Digital Leader"
+  {
+    title: "AZ-900 Microsoft Azure Fundamentals",
+    link: "https://learn.microsoft.com/en-us/users/priyaobulsettyviswa-4389/credentials/6138391bb2f36421"
+  },
+  {
+    title: "AZ-204 Developing Solutions for Microsoft Azure",
+    link: "https://learn.microsoft.com/en-us/users/priyaobulsettyviswa-4389/credentials/F83DEC3B663AD878"
+  },
+  {
+    title: "GCDL Google Cloud Digital Leader",
+    link: "https://www.credential.net/google-cloud-digital-leader"
+  }
 ];
 
 export const LANGUAGES = ["English", "Hindi", "Telugu"];

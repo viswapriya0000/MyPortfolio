@@ -19,7 +19,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://www.linkedin.com/in/viswa-priya-obulsetty-395862172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   github: "https://github.com/viswapriya0000/MyDemoPortfolioForPracticsing",
   // Standard view link for Google Drive PDF
-  resumeUrl: "https://drive.google.com/file/d/15m6UPTT1lBmOJaNK4JuZlahlzpj5GuRO/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1rlwXFnxpQ-TWVgpmDYidN3ChVVOLGw3H/view?usp=sharing",
   location: "Bangalore, India",
   education: {
     degree: "Bachelor of Technology (B. Tech) in Electronics and Communication Engineering",
@@ -115,7 +115,7 @@ export const CERTIFICATIONS = [
   },
   {
     title: "GCDL Google Cloud Digital Leader",
-    link: "https://www.credential.net/google-cloud-digital-leader"
+    link: "https://www.credly.com/badges/55c73e2d-10bc-4110-9025-e37b0e1f8fe8/public_url"
   }
 ];
 

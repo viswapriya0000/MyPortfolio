@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import { PERSONAL_INFO } from './constants';
 
@@ -26,6 +27,8 @@ const App: React.FC = () => {
         <Experience />
 
         <Projects />
+
+        <Certifications />
 
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto glass p-12 rounded-3xl border border-blue-500/20 text-center space-y-8">
